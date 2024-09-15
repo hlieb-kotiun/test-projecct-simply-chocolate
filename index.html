@@ -24,19 +24,25 @@
     <header>
       <div class="container header-container">
         <div class="logo-wrap">
-          <a class="logo" href="./index.html">SIMPLY CHOCOLATE</a>
-          <svg class="logo-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-chocko-bar"></use>
-          </svg>
+          <a class="logo" href="./index.html"
+            >SIMPLY CHOCOLATE
+            <svg class="logo-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-chocko-bar"></use>
+            </svg>
+          </a>
         </div>
         <nav class="header-nav">
           <ul class="nav-list">
-            <li class="list-item"><a class="nav-item" href="">Home</a></li>
             <li class="list-item">
-              <a class="nav-item" href="">How it’s made?</a>
+              <a class="nav-item" href="./index.html">Home</a>
             </li>
             <li class="list-item">
-              <a class="nav-item" href="">Chocolate is loved</a>
+              <a class="nav-item" href="#how-its-made">How it’s made?</a>
+            </li>
+            <li class="list-item">
+              <a class="nav-item" href="#chocolate-is-loved"
+                >Chocolate is loved</a
+              >
             </li>
           </ul>
           <div class="header-network">
@@ -72,7 +78,7 @@
           <div class="hero-links">
             <button class="hero-btn" type="button">Buy now</button>
             <a class="hero-link-btn" href="#how-its-made">How it’s made</a>
-            <a class="hero-link" href=""
+            <a class="hero-link" href="#footer"
               >scroll down
               <div class="hero-link-wrapper">
                 <svg class="hero-link-icon" width="22" height="22">
@@ -134,7 +140,7 @@
         </div>
       </section>
       <!-- Taste -->
-      <section class="">
+      <section class="" id="taste">
         <div class="container taste-container">
           <div class="taste-wrap">
             <h2 class="taste-title">
@@ -298,7 +304,7 @@
         </div>
       </section>
       <!-- People -->
-      <section class="people">
+      <section class="people" id="chocolate-is-loved">
         <div class="container people-container">
           <h2 class="people-title">
             chocolate <span class="title-part">is loved</span>
@@ -356,7 +362,7 @@
       </section>
 
       <!-- #region Footer -->
-      <footer class="footer">
+      <footer class="footer" id="footer">
         <div class="container">
           <div class="footer-wrapper">
             <h2 class="footer-title">
@@ -389,32 +395,36 @@
             <nav class="footer-nav">
               <ul class="footer-nav-list">
                 <li class="footer-nav-list-item">
-                  <a href="" class="foter-nav-link">Home</a>
+                  <a href="index.html" class="foter-nav-link">Home</a>
                 </li>
                 <li class="footer-nav-list-item">
-                  <a href="" class="foter-nav-link">How it’s made?</a>
+                  <a href="#how-its-made" class="foter-nav-link"
+                    >How it’s made?</a
+                  >
                 </li>
                 <li class="footer-nav-list-item">
-                  <a href="" class="foter-nav-link">Chocolate is loved</a>
+                  <a href="#chocolate-is-loved" class="foter-nav-link"
+                    >Chocolate is loved</a
+                  >
                 </li>
               </ul>
             </nav>
-            <form class="footer-form">
+            <form class="footer-subscribe-form">
               <label class="footer-input-label" for="user-email"></label>
               <input
-                class="footer-input"
+                class="subscribe-input"
                 name="user-email-field"
                 id="user-email"
                 type="email"
                 placeholder="Enter your email"
               />
-              <button class="footer-form-btn" type="submit">Subscribe</button>
+              <button class="footer-subscribe-form-btn" type="submit">Subscribe</button>
             </form>
           </div>
         </div>
       </footer>
       <!-- #endregion Footer -->
-      <!-- <div class="backdrop">
+      <div class="backdrop is-open">
         <div class="modal">
           <button class="modal-close-btn">
             <svg class="close-btn-icon" width="28" height="28">
@@ -441,7 +451,7 @@
               <div class="input-container">
                   <input name="email" class="footer-input" id="user-email" type="text">
                   <svg class="input-svg" width="24" height="24">
-                    <use href="./images/icons.svg#icon-user"></use>
+                    <use href="./images/icons.svg#icon-mail"></use>
                   </svg>
               </div>
             </div>
@@ -450,7 +460,7 @@
               <div class="input-container">
                   <input class="footer-input" id="user-cell" type="text">
                   <svg class="input-svg" width="24" height="24">
-                    <use href="./images/icons.svg#icon-user"></use>
+                    <use href="./images/icons.svg#icon-phone-1"></use>
                   </svg>
               </div>
             </div>
@@ -475,7 +485,7 @@
             <button class="form-btn" type="submit">Send</button>
           </form>
         </div>
-      </div> -->
+      </div>
     </main>
   </body>
 </html>
