@@ -181,7 +181,7 @@ button {
 .section-hero{
     background-color: #1e1823;
     align-items: center;
-    background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(./images/main-bg-1x.jpg);
+    background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(../images/main-bg-1x.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -189,7 +189,7 @@ button {
 
 @media screen and (min-resolution: 2dppx) {
     .section-hero{
-        background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(./images/main-bg-2x.jpg);
+        background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(../images/main-bg-2x.jpg);
     }
 }
 
@@ -298,11 +298,11 @@ button {
 
 @media screen and (min-width: 736px) and (max-width: 1167px) {
     .section-hero {
-        background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(./images/main-bg-tb-1x.jpg);
+        background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(../images/main-bg-tb-1x.jpg);
     }
     @media screen and (min-resolution: 2dppx) {
         .section-hero {
-            background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(./images/main-bg-tb-2x.jpg);
+            background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(../images/main-bg-tb-2x.jpg);
         }
     }
     .hero-container {
@@ -315,11 +315,11 @@ button {
 
 @media screen and (min-width: 367px) and (max-width: 735px) {
     .section-hero {
-            background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(./images/main-bg-mb-1x.jpg);
+            background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(../images/main-bg-mb-1x.jpg);
         }
     @media screen and (min-resolution: 2dppx) {
         .section-hero {
-            background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(./images/main-bg-mb-2x.jpg);
+            background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(../images/main-bg-mb-2x.jpg);
         }
     }
 
