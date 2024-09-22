@@ -33,6 +33,7 @@ button {
     margin: 0 auto;
 }
 
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -46,19 +47,38 @@ button {
     overflow: hidden;
   }
 
+@media screen and (min-width: 736px) and (max-width: 1167px) {
+    .container {
+            width: 736px;
+            padding: 0 16px;
+            margin: 0 auto;
+        }
+}
+
+@media screen and (min-width: 367px) and (max-width: 735px) {
+    .container {
+        width: 367px;
+        padding: 0 16px;
+        margin: 0 auto;
+    } 
+}
+
+
+
+
 /* Header */
 
 .header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 28px 0 ;
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 4px;
-    padding: 28px 0;
     font-style: italic;
     font-weight: 700;
     font-size: 18px;
@@ -81,7 +101,6 @@ button {
     display: flex;
     align-items: center;
     gap: 24px;
-    padding: 30px 0;
     margin-right: 90px;
 }
 
@@ -98,7 +117,6 @@ button {
     color: #fd9222;
 }
 
-
 .header-network-list{
     display: flex;
     gap: 18px;
@@ -114,15 +132,65 @@ button {
 .network-icon:hover,.network-icon:focus{
     stroke:#fd9222;
 }
+
+.menu-btn {
+    display: none;
+}
+
+@media screen and (min-width: 736px) and (max-width: 1167px) {
+    .logo {
+        font-size: 14px;
+        line-height: 1.28571;
+    }
+
+    .logo-icon{
+        width: 21px;
+        height: 21px;
+    }
+
+    .nav-list {
+        margin-right: 48px;
+    }
+}
+
+@media screen and (min-width: 367px) and (max-width: 735px) {
+    .header-nav {
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        background: transparent;
+        cursor: pointer;
+        border: none;
+    }
+
+    .menu-svg {
+        stroke: #111;
+    }
+       
+}
+
+
 /* Hero */
 
 .section-hero{
     background-color: #1e1823;
     align-items: center;
-    background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(/images/chocolate-covered-cocoa-powder\ 1.png);
+    background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(/images/main-bg-1x.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+@media screen and (min-resolution: 2dppx) {
+    .section-hero{
+        background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(/images/main-bg-2x.jpg);
+    }
 }
 
 .hero-container{
@@ -141,10 +209,9 @@ button {
     color: #fff;
 }
 
-.hero-links{
+.hero-list-links{
     display: flex;
     align-items: center;
-
 }
 
 .hero-btn {
@@ -155,9 +222,6 @@ button {
     border: none;
     background-color: #fd9222;
     border-radius: 100px;
-    padding: 14px 40px;
-    width: 144px;
-    height: 45px;
     font-weight: 600;
     font-size: 14px;
     color: #fff;
@@ -170,7 +234,6 @@ button {
     background-color: #fcf1e0;
     color: #fd9222;
 }
-
 
 .hero-link-btn{
     background-color: transparent;
@@ -191,7 +254,6 @@ button {
     border-color: #fd9222;
     color: #fd9222;
 }
-
 
 .hero-link{
     display: flex;
@@ -214,8 +276,7 @@ button {
     background-color: #fafafa;
     width: 38px;
     height: 38px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .hero-link-icon{
@@ -233,6 +294,89 @@ button {
 
 .hero-link:focus .hero-link-wrapper .hero-link-icon {
     fill: #fafafa;
+}
+
+@media screen and (min-width: 736px) and (max-width: 1167px) {
+    .section-hero {
+        background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(/images/main-bg-tb-1x.jpg);
+    }
+    @media screen and (min-resolution: 2dppx) {
+        .section-hero {
+            background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(/images/main-bg-tb-2x.jpg);
+        }
+    }
+    .hero-container {
+        padding-top: 671px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 367px) and (max-width: 735px) {
+    .section-hero {
+            background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(/images/main-bg-mb-1x.jpg);
+        }
+    @media screen and (min-resolution: 2dppx) {
+        .section-hero {
+            background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(/images/main-bg-mb-2x.jpg);
+        }
+    }
+
+    .hero-container {
+        padding-top: 395px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .hero-text {
+        margin-bottom: 32px;
+        max-width: 299px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .hero-list-links {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 32px;
+    }
+
+    .hero-btn {
+        padding: 12px 28px;
+        min-width: 120px;
+        height: 41px;
+    }
+
+    .hero-link-btn {
+        padding: 12px 28px;
+        min-width: 183px;
+        height: 45px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .hero-link {
+        margin-left: 0;
+        font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: -0.03em;
+    }
+
+    .hero-link-wrapper {
+        width: 28px;
+        height: 28px;
+    }
+
+    .hero-link-icon {
+        width: 16px;
+        height: 16px;
+    }
+
 }
 
 /* Benefits */
@@ -283,8 +427,6 @@ button {
     width: 62px;
     height: 62px;
 }
-
-
 
 .benefits-title {
     margin-bottom: 18px;
@@ -566,7 +708,6 @@ background-color: #fd9222;
     border: 1px solid #eceded;
     top: 5px;
     left: -16px;
-
 }
 
 
