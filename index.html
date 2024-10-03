@@ -145,7 +145,7 @@
         </div>
       </section>
       <!-- Taste -->
-      <!-- <section class="" id="taste">
+      <section class="" id="taste">
         <div class="container taste-container">
           <div class="taste-wrap">
             <h2 class="taste-title">
@@ -163,7 +163,23 @@
           <ul class="card-list">
             <li class="card-list-item">
               <div class="card-wraper">
-                <img src="./images/chocolate-bar.png" alt="Chocolate-bar" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/chocolate-bar.png    1x,
+                      ./images/chocolate-bar-2x.png 2x
+                    "
+                    media="(min-width: 1168px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/chocolate-bar-tb-mb.png    1x,
+                      ./images/chocolate-bar-tb-mb-2x.png 2x
+                    "
+                    media="(max-width: 1167px)"
+                  />
+                  <img src="./images/chocolate-bar.png" alt="Chocolate-bar" />
+                </picture>
                 <p class="card-text">mILK CHOCOLATE</p>
               </div>
               <div class="card-list-overlay">
@@ -187,7 +203,18 @@
             </li>
             <li class="card-list-item">
               <div class="card-wraper">
-                <img src="./images/milk.png" alt="Milk" />
+                <picture>
+                  <source
+                    srcset="./images/milk.png 1x"
+                    media="(min-width: 1168px)"
+                  />
+                  <source
+                    srcset="./images/milk-tb-mb.png"
+                    media="(max-width: 1167px)"
+                  />
+                  <img src="./images/milk.png" alt="Milk" />
+                </picture>
+
                 <p class="card-text">Milk chocolate</p>
               </div>
               <div class="card-list-overlay">
@@ -212,7 +239,17 @@
             </li>
             <li class="card-list-item">
               <div class="card-wraper">
-                <img src="./images/nuts.png" alt="Nusts" />
+                <picture>
+                  <source
+                    srcset="./images/nuts.png 1x"
+                    media="(min-width: 1168px)"
+                  />
+                  <source
+                    srcset="./images/nuts-tb-mb.png 1x"
+                    media="(max-width: 1167px)"
+                  />
+                  <img src="./images/nuts.png" alt="Nusts" />
+                </picture>
                 <p class="card-text">nuts</p>
               </div>
               <div class="card-list-overlay">
@@ -237,7 +274,17 @@
             </li>
             <li class="card-list-item">
               <div class="card-wraper">
-                <img src="./images/beans.png" alt="Chocolate-beans" />
+                <picture>
+                  <source
+                    srcset="./images/beans.png 1x"
+                    media="(min-width: 1168px)"
+                  />
+                  <source
+                    srcset="./images/beans-tb-mb.png"
+                    media="(max-width: 1167px)"
+                  />
+                  <img src="./images/beans.png" alt="Chocolate-beans" />
+                </picture>
                 <p class="card-text">sEMI - SWEET CHOCOLATE</p>
               </div>
               <div class="card-list-overlay">
@@ -262,7 +309,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- How its made -->
       <!-- <section id="how-its-made">
         <div class="container reciept-container">
