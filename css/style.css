@@ -759,18 +759,18 @@ button {
 .reciept-wrap {
   display: flex;
   justify-content: space-between;
-  min-height: 400px;
+  /* min-height: 400px; */
+  gap: 20px;
 }
 
 .reciept-title-span {
   color: #fd9222;
 }
 
-.reciept-img {
+/* .reciept-img {
   width: 600px;
   min-height: 400px;
-  margin-right: 20px;
-}
+} */
 
 .reciept-list-title {
   font-weight: 600;
@@ -820,6 +820,39 @@ button {
   border: 1px solid #eceded;
   top: 5px;
   left: -16px;
+}
+
+@media screen and (min-width: 736px) and (max-width: 1167px) {
+  .reciept-wrap {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 45px;
+  }
+  .reciept-menu-wrap {
+    width: 100%;
+    min-height: 356px;
+  }
+  .reciept-list {
+    gap: 18px;
+  }
+  .reciept-list-title {
+    max-width: 350px;
+  }
+  .reciept-list-item {
+    max-width: 464px;
+  }
+}
+@media screen and (min-width: 367px) and (max-width: 735px) {
+  .reciept-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .reciept-menu-wrap {
+    padding: 20px 14px;
+  }
+  .reciept-list {
+    gap: 18px;
+  }
 }
 
 /* People */

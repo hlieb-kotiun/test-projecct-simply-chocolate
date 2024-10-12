@@ -310,18 +310,40 @@
           </ul>
         </div>
       </section>
-      <!-- How its made -->
-      <!-- <section id="how-its-made">
+      <!--#region How its made -->
+      <section id="how-its-made">
         <div class="container reciept-container">
           <h2 class="reciept-title">
             How it’s <span class="reciept-title-span">made?</span>
           </h2>
           <div class="reciept-wrap">
-            <img
-              class="reciept-img"
-              src="./images/image.png"
-              alt="cooking-proces"
-            />
+            <picture>
+              <source
+                srcset="./images/image.png 1x, ./images/image-2x.png 2x"
+                media="(min-width: 1168px)"
+              />
+              <source
+                srcset="
+                  ./images/image-tb-1x.png 1x,
+                  ./images/image-tb-2x.png 2x
+                "
+                media="(min-width: 736px)"
+              />
+              <source
+                srcset="
+                  ./images/image-mb-1x.png 1x,
+                  ./images/image-mb-2x.png 2x
+                "
+                media="(max-width: 735px)"
+              />
+
+              <img
+                class="reciept-img"
+                src="./images/image.png"
+                alt="cooking-proces"
+              />
+            </picture>
+
             <div class="reciept-menu-wrap">
               <h3 class="reciept-list-title">
                 Try our chocolates today and discover the perfect balance of
@@ -354,7 +376,8 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
+      <!-- #endregion How its made -->
       <!-- People -->
       <!-- <section class="people" id="chocolate-is-loved">
         <div class="container people-container">
