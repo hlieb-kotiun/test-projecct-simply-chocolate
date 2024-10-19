@@ -759,18 +759,12 @@ button {
 .reciept-wrap {
   display: flex;
   justify-content: space-between;
-  /* min-height: 400px; */
   gap: 20px;
 }
 
 .reciept-title-span {
   color: #fd9222;
 }
-
-/* .reciept-img {
-  width: 600px;
-  min-height: 400px;
-} */
 
 .reciept-list-title {
   font-weight: 600;
@@ -823,6 +817,10 @@ button {
 }
 
 @media screen and (min-width: 736px) and (max-width: 1167px) {
+  .reciept-container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
   .reciept-wrap {
     flex-direction: column;
     align-items: center;
@@ -854,7 +852,6 @@ button {
     gap: 18px;
   }
 }
-
 /* People */
 
 .people {
@@ -893,7 +890,7 @@ button {
 
 .people-list-item {
   position: relative;
-  width: calc(100% - 2 * 28px) / 3;
+  max-width: calc(100% - 2 * 28px) / 3;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   padding: 0 24px 24px 24px;
@@ -930,6 +927,17 @@ button {
   color: rgba(17, 17, 17, 0.7);
 }
 
+.slider {
+  display: none;
+  gap: 13px;
+}
+.dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: rgba(17, 17, 17, 0.1);
+}
+
 .review-btn {
   display: block;
   border: 1px solid #fd9222;
@@ -941,6 +949,68 @@ button {
   font-size: 18px;
   color: #111;
   cursor: pointer;
+}
+
+@media screen and (min-width: 736px) and (max-width: 1167px) {
+  .people {
+    margin-bottom: 50px;
+  }
+  .people-title {
+    margin-bottom: 50px;
+  }
+  .people-list {
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .people-list:nth-child(2) {
+    order: 3;
+  }
+  .people-list-item {
+    max-width: calc(100% - 16px) / 2;
+  }
+
+  .people-list-item:nth-child(3) {
+    display: none;
+  }
+  .review-btn {
+    margin-bottom: 91px;
+  }
+  .review-btn:nth-child(3) {
+    order: 2;
+  }
+  .slider {
+    display: flex;
+  }
+  .slider:nth-child(3) {
+    order: 4;
+  }
+}
+@media screen and (min-width: 367px) and (max-width: 735px) {
+  .people-title {
+    margin-bottom: 74px;
+  }
+  .people-list {
+    margin-bottom: 20px;
+  }
+  .people-list-item:nth-child(2) {
+    display: none;
+  }
+  .people-list-item:nth-child(3) {
+    display: none;
+  }
+  .slider {
+    display: flex;
+    margin-bottom: 32px;
+  }
+  .review-btn {
+    padding: 12px 28px;
+    min-width: 165px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #111;
+    cursor: pointer;
+  }
 }
 
 /* Footer */
