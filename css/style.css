@@ -953,7 +953,7 @@ button {
 
 @media screen and (min-width: 736px) and (max-width: 1167px) {
   .people {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
   .people-title {
     margin-bottom: 50px;
@@ -986,6 +986,9 @@ button {
   }
 }
 @media screen and (min-width: 367px) and (max-width: 735px) {
+  .people {
+    margin-bottom: 80px;
+  }
   .people-title {
     margin-bottom: 74px;
   }
@@ -1008,6 +1011,7 @@ button {
     height: 41px;
     font-weight: 600;
     font-size: 14px;
+    line-height: 1.33333;
     color: #111;
     cursor: pointer;
   }
@@ -1119,8 +1123,8 @@ button {
   outline: none;
   border: 1.5px solid rgba(255, 255, 255, 0.15);
   border-radius: 30px;
-  padding: 13px 24px;
-  width: 313px;
+  padding: 14px 24px;
+  min-width: 313px;
   height: 52px;
   outline: none;
   font-weight: 400;
@@ -1143,19 +1147,40 @@ button {
 }
 
 .footer-subscribe-form-btn {
+  font-weight: 600;
+  font-size: 14px;
   display: block;
   border-radius: 100px;
-  padding: 17px 40px;
+  padding: 17px 32px;
   min-width: 137px;
   height: 52px;
+  color: #fff;
   background: #fd9222;
   border: none;
 }
 
-.footer-subscribe-form-btn {
-  font-weight: 600;
-  font-size: 14px;
-  color: #fff;
+@media screen and (min-width: 736px) and (max-width: 1167px) {
+  .footer-nav-list {
+    gap: 16px;
+  }
+  .subscribe-input {
+    padding: 14px 24px;
+    min-width: 232px;
+    height: 45px;
+    outline: none;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #fff;
+    background-color: transparent;
+  }
+  .footer-subscribe-form-btn {
+    padding: 14px 28px;
+    min-width: 128px;
+    height: 45px;
+  }
+}
+@media screen and (min-width: 367px) and (max-width: 735px) {
 }
 
 /* backdrop */
