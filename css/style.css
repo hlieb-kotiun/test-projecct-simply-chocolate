@@ -987,7 +987,7 @@ button {
 }
 @media screen and (min-width: 367px) and (max-width: 735px) {
   .people {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
   .people-title {
     margin-bottom: 74px;
@@ -1096,6 +1096,11 @@ button {
   gap: 24px;
 }
 
+.footer-nav-list-item:nth-child(4),
+.footer-nav-list-item:nth-child(5) {
+  display: none;
+}
+
 .foter-nav-link {
   font-weight: 500;
   font-size: 14px;
@@ -1114,7 +1119,6 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 8px;
 }
 
 .subscribe-input {
@@ -1147,6 +1151,7 @@ button {
 }
 
 .footer-subscribe-form-btn {
+  margin-left: 8px;
   font-weight: 600;
   font-size: 14px;
   display: block;
@@ -1168,7 +1173,7 @@ button {
   }
   .subscribe-input {
     padding: 14px 24px;
-    min-width: 232px;
+    min-width: 233px;
     height: 45px;
     outline: none;
     font-weight: 400;
@@ -1182,12 +1187,14 @@ button {
     min-width: 128px;
     height: 45px;
   }
-
   .footer-nav-list {
     flex-direction: column;
   }
 }
 @media screen and (min-width: 367px) and (max-width: 735px) {
+  .footer {
+    padding: 32px 0;
+  }
   .footer-title {
     font-size: 24px;
     line-height: 1.16667;
@@ -1206,11 +1213,20 @@ button {
     align-items: start;
     margin-top: 64px;
   }
+  .footer-nav-wrapper::before {
+    top: -32px;
+  }
+
   .footer-nav-list {
     gap: 18px;
     flex-direction: column;
     margin-bottom: 32px;
   }
+  .footer-nav-list-item:nth-child(4),
+  .footer-nav-list-item:nth-child(5) {
+    display: block;
+  }
+
   .footer-subscribe-form {
     display: flex;
     flex-direction: row;
