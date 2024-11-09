@@ -384,7 +384,7 @@ button {
 
   .hero-link-btn {
     padding: 12px 28px;
-    min-width: 183px;
+    min-width: 159px;
     height: 45px;
     text-align: center;
     font-weight: 600;
@@ -1294,9 +1294,9 @@ button {
   position: absolute;
   width: 517px;
   min-height: 794px;
-  top: 0;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   background-color: #fafafa;
   padding: 40px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -1335,6 +1335,26 @@ button {
 
 .modal-title-orange {
   color: #fd9222;
+}
+
+@media screen and (min-width: 367px) and (max-width: 735px) {
+  .modal {
+    padding: 32px 24px;
+    width: 311px;
+    min-height: 619px;
+  }
+  .modal-close-btn {
+    top: 14px;
+    right: 14px;
+    width: 24px;
+    height: 24px;
+  }
+  .modal-title {
+    font-size: 20px;
+    line-height: 1.2;
+    width: 255px;
+    margin-bottom: 32px;
+  }
 }
 
 /* Form */
@@ -1473,4 +1493,126 @@ button {
   min-width: 117px;
   height: 45px;
   background-color: #fd9222;
+}
+
+@media screen and (min-width: 367px) and (max-width: 735px) {
+  .input-container {
+    margin-top: 4px;
+  }
+  .footer-input {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 43px;
+    padding-right: 18px;
+    width: 263px;
+    height: 45px;
+    font-size: 14px;
+  }
+  .input-svg {
+    width: 17px;
+    height: 17px;
+    top: 14px;
+    left: 18px;
+  }
+  .input-comment {
+    padding: 14px 18px;
+    margin-top: 4px;
+    max-width: 263px;
+    max-height: 91px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+    resize: none;
+    border: 1px solid rgba(17, 17, 17, 0.05);
+    border-radius: 13px;
+    width: 436px;
+    height: 137px;
+    outline: transparent;
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .input-comment::placeholder {
+    font-size: 13px;
+  }
+  .form-btn {
+    margin-top: 32px;
+  }
+}
+
+/* Mobile menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #1e1823;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.mobile-menu-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 136px 16px 20px 16px;
+  max-width: 375px;
+  height: 100%;
+}
+.close-mobile-menu-btn {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+}
+
+.close-btn-svg {
+  stroke: #fff;
+}
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.mobile-menu-link {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.orange {
+  color: #fd9222;
+}
+.media-list {
+  display: flex;
+  gap: 18px;
+  margin-top: auto;
+}
+.media-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.media-list-icon {
+  fill: transparent;
+  stroke: #ffff;
 }
